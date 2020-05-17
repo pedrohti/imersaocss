@@ -6,10 +6,9 @@
 		<title>Pedro Moraes</title>
 		<link rel="stylesheet" href="./css/style.css" />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Acme&family=Patrick+Hand&family=Roboto&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oswald&family=Roboto&family=Kalam:wght@300&&family=Titillium+Web&display=swap"
 			rel="stylesheet"
 		/>
-
 		<script
 			src="https://kit.fontawesome.com/6d6952c5be.js"
 			crossorigin="anonymous"
@@ -18,10 +17,10 @@
 	<body>
 		<header>
 			<nav class="menu">
-				<ul>
-					<li><a href="#">Sobre</a></li>
-					<li><a href="#">Portfólio</a></li>
-					<li><a href="#">Contato</a></li>
+				<ul class="container">
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="#portfolio">Portfólio</a></li>
+					<li><a href="#contato">Contato</a></li>
 				</ul>
 			</nav>
 			<div class="titulo">
@@ -30,42 +29,115 @@
 			</div>
 		</header>
 
-		<section class="portfolio">
-			<h2>Projetos</h2>
+		<section class="sobre container" id="sobre">
+			<h2>Sobre</h2>
+			<figure class="avatar">
+				<img
+					src="https://avatars0.githubusercontent.com/u/27506497?s=460&u=313c25b0248ea11117bd6db57b28ecf8d3887b20&v=4"
+					alt=""
+				/>
+			</figure>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
+				iste et qui ab neque illo recusandae ex repudiandae cumque
+				deserunt, excepturi, dicta iusto blanditiis repellendus maiores
+				corporis eos nulla autem.
+			</p>
+
+			<p>
+				Eos cumque excepturi saepe officia molestiae. Quis, sapiente
+				odio repellendus provident velit fugit harum facilis! Sed
+				laudantium saepe non consequuntur consectetur aut, sit aliquam
+				incidunt provident commodi quidem accusamus rem?
+			</p>
+
+			<p>
+				Ducimus porro deserunt perferendis dolor quasi sint neque illum
+				voluptate maiores similique tenetur quidem libero dolore
+				doloremque laboriosam consequuntur eum totam hic, earum ad
+				accusamus voluptatum. Porro nulla consequatur cum?
+			</p>
+
+			<p>
+				Este site foi construído durante a
+				<a href="https://www.alura.com.br/imersao-css" target="_blank"
+					>Imersão CSS da Alura</a
+				>
+			</p>
+		</section>
+
+		<section class="portfolio container" id="portfolio">
+			<h2>Portfólio</h2>
 			<div class="grid">
-				<figure>
-					<img
-						class="img-portfolio"
-						src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg"
-						alt="eCommerce"
-					/>
-					<figcaption>eCommerce</figcaption>
-				</figure>
-				<figure>
-					<img
-						class="img-portfolio"
-						src="./img/mobile-creditos-nate-grant-unsplash.jpg"
-						alt=">Mobile"
-					/>
-					<figcaption>Mobile</figcaption>
-				</figure>
-				<figure>
-					<img
-						class="img-portfolio"
-						src="./img/webdesign-creditos-domenico-loia-unsplash.jpg"
-						alt="Web design"
-					/>
-					<figcaption>Web design</figcaption>
-				</figure>
-				<figure>
-					<img
-						class="img-portfolio"
-						src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg"
-						alt="Projetos pessoais"
-					/>
-					<figcaption>Projetos pessoais</figcaption>
-				</figure>
+				<div class="flip-card">
+					<div class="card">
+						<figure class="card-front">
+							<img
+								class="img-portfolio"
+								src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg"
+								alt="eCommerce"
+							/>
+						</figure>
+						<div class="card-back">Fundo</div>
+					</div>
+				</div>
+				<div class="flip-card">
+					<div class="card">
+						<figure class="card-front">
+							<img
+								class="img-portfolio"
+								src="./img/mobile-creditos-nate-grant-unsplash.jpg"
+								alt=">Mobile"
+							/>
+						</figure>
+						<div class="card-back">Fundo</div>
+					</div>
+				</div>
+				<div class="flip-card">
+					<div class="card">
+						<figure class="card-front">
+							<img
+								class="img-portfolio"
+								src="./img/webdesign-creditos-domenico-loia-unsplash.jpg"
+								alt="Web design"
+							/>
+						</figure>
+						<div class="card-back">Fundo</div>
+					</div>
+				</div>
+				<div class="flip-card">
+					<div class="card">
+						<figure class="card-front">
+							<img
+								class="img-portfolio"
+								src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg"
+								alt="Projetos pessoais"
+							/>
+						</figure>
+						<div class="card-back">Fundo</div>
+					</div>
+				</div>
 			</div>
 		</section>
+		<section class="contato container" id="contato">
+			<h2>Contato</h2>
+			<div class="grid icons">
+				<a target="_blank" href="https://github.com/pedrohti">
+					<i class="fab fa-github"></i>
+				</a>
+				<a target="_blank" href="https://twitter.com/pedroh_moraes">
+					<i class="fab fa-twitter"></i>
+				</a>
+				<a target="_blank" href="https://linkedin.com/in/pedrohmoraes">
+					<i class="fab fa-linkedin"></i>
+				</a>
+				<a href="mailto:pedroh.ti@hotmail.com">
+					<i class="fas fa-envelope"></i>
+				</a>
+			</div>
+		</section>
+		<a href="#" class="float">
+			<i class="fa fa-home my-float"></i>
+		</a>
 	</body>
 </html>
