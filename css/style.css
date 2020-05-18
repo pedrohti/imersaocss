@@ -201,7 +201,7 @@ header {
 	width: 100%;
 	object-fit: cover;
 	object-position: left bottom;
-	transition: transform 500ms;
+	/*transition: transform 500ms;*/
 }
 
 .flip-card {
@@ -209,14 +209,14 @@ header {
 	perspective: 500px;
 }
 
-.flip-card:hover .card {
+/*.flip-card:hover .card {
 	transform: rotateY(180deg);
-}
+}*/
 
 .card {
 	position: relative;
 	transform-style: preserve-3d;
-	transition: transform 3s;
+	/*transition: transform 3s;*/
 }
 
 .card-front,
@@ -235,7 +235,7 @@ header {
 	background-color: rgba(255, 255, 255, 0.7);
 	height: 180px;
 	width: 100%;
-	transform: rotateY(180deg);
+	/*transform: rotateY(180deg);*/
 }
 
 .contato .icons {
