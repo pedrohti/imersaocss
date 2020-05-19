@@ -90,7 +90,8 @@ header {
 } */
 
 .site-title,
-.site-subtitle {
+.site-subtitle,
+.construction {
 	color: whitesmoke;
 	text-align: center;
 }
@@ -106,6 +107,13 @@ header {
 	font-style: italic;
 	font-family: "Kalam", cursive;
 	line-height: 1.8em;
+}
+
+.construction {
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 0px 0px 2px rgba(255, 255, 0, 0.7);
+  font-size: 1em;
+  /* line-height: 1.8em; */
 }
 
 .sobre,
